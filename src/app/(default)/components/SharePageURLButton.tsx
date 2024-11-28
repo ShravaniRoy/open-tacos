@@ -10,7 +10,7 @@ import { ControlledTooltip } from '@/components/ui/Tooltip'
  */
 export const SharePageURLButton: React.FC<{ path: string, name: string }> = ({ path, name }) => {
   const slug = getFriendlySlug(name)
-  const url = `https://openbeta.io/${path}/${slug}`
+  const url = `https://openbeta.io${path}/${slug}`
 
   const [clicked, setClicked] = useState(false)
 
